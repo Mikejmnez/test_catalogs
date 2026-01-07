@@ -4,7 +4,7 @@ sources:
   # PACE DAILY CHLOR_A
   PACE_L3m.DAY.CHL.V3_1.chlor_a.4km.NRT:
     description: Grid of get_started
-    driver: netcdf
+    driver: opendap
     args:
       urlpath: ['dap4://oceandata.sci.gsfc.nasa.gov/opendap/PACE_OCI/L3SMI/2025/0701/PACE_OCI.20250701.L3m.DAY.CHL.V3_1.chlor_a.4km.NRT.nc?dap4.ce=/lat;/lon;/chlor_a', 'dap4://oceandata.sci.gsfc.nasa.gov/opendap/PACE_OCI/L3SMI/2025/0702/PACE_OCI.20250702.L3m.DAY.CHL.V3_1.chlor_a.4km.NRT.nc?dap4.ce=/lat;/lon;/chlor_a', 'dap4://oceandata.sci.gsfc.nasa.gov/opendap/PACE_OCI/L3SMI/2025/0703/PACE_OCI.20250703.L3m.DAY.CHL.V3_1.chlor_a.4km.NRT.nc?dap4.ce=/lat;/lon;/chlor_a', 'dap4://oceandata.sci.gsfc.nasa.gov/opendap/PACE_OCI/L3SMI/2025/0704/PACE_OCI.20250704.L3m.DAY.CHL.V3_1.chlor_a.4km.NRT.nc?dap4.ce=/lat;/lon;/chlor_a']
       xarray_kwargs:
