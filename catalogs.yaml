@@ -25,7 +25,7 @@ sources:
     description: ECCO version 4 release 4 monthly mean dataset with fields necessary to close heat, salt and volume budgets
     model: MITGCM
     args:
-      urlpath: ["https://opendap.earthdata.nasa.gov/providers/POCLOUD/collections/ECCO%20Ocean%20Temperature%20and%20Salinity%20-%20Monthly%20Mean%20llc90%20Grid%20(Version%204%20Release%204)/granules/OCEAN_TEMPERATURE_SALINITY_mon_mean_" + f"{year}-{month:02d}_ECCO_V4r4_native_llc0090?dap4.ce=/THETA;/SALT" for year in range(1992, 2018) for month in range(1, 13)]
+      urlpath: [f"https://opendap.earthdata.nasa.gov/providers/POCLOUD/collections/ECCO%20Ocean%20Temperature%20and%20Salinity%20-%20Monthly%20Mean%20llc90%20Grid%20(Version%204%20Release%204)/granules/OCEAN_TEMPERATURE_SALINITY_mon_mean_{year}-{month:02d}_ECCO_V4r4_native_llc0090?dap4.ce=/THETA;/SALT" for year in range(1992, 2018) for month in range(1, 13)]
       xarray_kwargs: 
         engine: pydap
         concat_dim: time
@@ -44,7 +44,7 @@ sources:
     description: ECCO version 4 release 4 monthly mean dataset with fields necessary to close heat, salt and volume budgets
     model: MITGCM
     args:
-      urlpath: ["https://opendap.earthdata.nasa.gov/providers/POCLOUD/collections/ECCO%20Sea%20Surface%20Height%20-%20Monthly%20Mean%20llc90%20Grid%20(Version%204%20Release%204)/granules/SEA_SURFACE_HEIGHT_mon_mean_" + f"{year}-{month:02d}_ECCO_V4r4_native_llc0090?dap4.ce=/SSH;/SSHIBC;/SSHNOIBC;/ETAN" for year in range(1992, 2018) for month in range(1, 13)]
+      urlpath: [f"https://opendap.earthdata.nasa.gov/providers/POCLOUD/collections/ECCO%20Sea%20Surface%20Height%20-%20Monthly%20Mean%20llc90%20Grid%20(Version%204%20Release%204)/granules/SEA_SURFACE_HEIGHT_mon_mean_{year}-{month:02d}_ECCO_V4r4_native_llc0090?dap4.ce=/SSH;/SSHIBC;/SSHNOIBC;/ETAN" for year in range(1992, 2018) for month in range(1, 13)]
       xarray_kwargs: 
         engine: pydap
         concat_dim: time
