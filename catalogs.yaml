@@ -23,6 +23,7 @@ sources:
 # ======================================================================
   ECCO_THETA_SALT:
     description: ECCO version 4 release 4 monthly mean dataset with fields necessary to close heat, salt and volume budgets
+    driver: opendap
     model: MITGCM
     args:
       urlpath: [
@@ -69,6 +70,7 @@ sources:
 # ======================================================================
   ECCO_ETA:
     description: ECCO version 4 release 4 monthly mean dataset with fields necessary to close heat, salt and volume budgets
+    driver: opendap
     model: MITGCM
     args:
       urlpath: [
